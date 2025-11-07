@@ -1,12 +1,11 @@
-text  {
-    text-decoration: none;
-}
+
 body {
     background-color: black;
     color: white;
      font-family: Arial, Helvetica, sans-serif;
       margin: 0;
      padding: 0;
+     text-size: 16px;
 }
 button {
   border-radius: 0.5em;
@@ -152,10 +151,18 @@ border: 2px solid black;
     justify-content: space-around;
     align-items: center;
     border-top: 2px solid white;
+    min-height: 300px;
 }
 
 .fot{
-    text-align: left;
-    text-decoration: none; /* removes underline */
+
+    text-decoration: unset;/* removes underline */
     color: inherit;        /* inherit parent color (or set a custom color) */
+}
+.t-rectangle {
+    width:  20%; /* relative width of each rectangle */
+    height: 75%; /* take most of row-1 height */
+    background-color: black; /* visible color */
+    border-radius: 10px; /* optional rounded corners */
+    border: 1px solid grey;
 }
