@@ -131,6 +131,8 @@ border: 2px solid black;
     height: 100%; /* take most of row-1 height */
     background-color: white; /* visible color */
     border-radius: 10px; /* optional rounded corners */
+    color: black;
+    text-align: center;
 }
 .cont { /*gave this dimentions so sec-2 dosent affect white boxes*/
      display: flex;
@@ -165,4 +167,57 @@ border: 2px solid black;
     background-color: black; /* visible color */
     border-radius: 10px; /* optional rounded corners */
     border: 1px solid grey;
+}
+
+.contact-form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: inherit;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.contact-form button {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  background-color: black;
+  color: white;
 }
