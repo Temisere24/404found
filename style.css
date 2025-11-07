@@ -1,3 +1,6 @@
+text  {
+    text-decoration: none;
+}
 body {
     background-color: black;
     color: white;
@@ -60,8 +63,8 @@ border: 2px solid black;
 }
 
 .section {
-    
-    width: 97%;
+    height: 100dvh;
+    width: 97dvw;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -88,18 +91,71 @@ border: 2px solid black;
     margin-right: auto;
 }
 .sec { /*section of a page */
-  width: 100vw;   /* full width of screen */
-  height: 100vh;  /* full height of screen */
+  width: 100dvw;   /* full width of screen */
+  height: 100dvh;  /* full height of screen */
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.row-1 {
-    height: 30%;
-    width: 100%;
+.sec-2 {
+    width: 100dvw;   /* full width of screen */
+    display: flex;
+    flex-direction: column; /* stack children vertically */
+    justify-content: flex-start; /* align items from the top */
+    align-items: center; /* center children horizontally */
+    gap: 20px; /* space between .head and .row-1 */
+    padding: 20px; /* optional padding */
+    
 }
+
+.head {
+    width: 100%;
+    text-align: center;
+    flex: 0 0 auto; /* take space according to content */
+}
+
+.row-1 {
+    display: flex; /* arrange rectangles horizontally */
+    justify-content: space-around; /* space between rectangles */
+    align-items: center; /* vertically center rectangles */
+    width: 100%; /* fill the parent width */
+    max-width: 1200px; /* optional max width */
+    height: 300px; /* fixed height for rectangles */
+    background-color: rgba(0,0,0,0); /* optional for debugging */
+    margin-top: 25px;
+     height: 60dvh;
+     flex-wrap: ;
+}
+
 .r-rectangle {
-    height: 100%;
-    width: 20%;
-    color: white;
+    width: 20%; /* relative width of each rectangle */
+    height: 100%; /* take most of row-1 height */
+    background-color: white; /* visible color */
+    border-radius: 10px; /* optional rounded corners */
+}
+.cont { /*gave this dimentions so sec-2 dosent affect white boxes*/
+     display: flex;
+    flex-direction: column;
+    width: 100dvw;      /* fill parent width */
+   
+}
+.a-rectangle {
+    width: 35%; /* relative width of each rectangle */
+    height: 100%; /* take most of row-1 height */
+    background-color: white; /* visible color */
+    border-radius: 10px; /* optional rounded corners */
+}
+.foot {
+    width: 100dvw;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid white;
+}
+
+.fot{
+    text-align: left;
+    text-decoration: none; /* removes underline */
+    color: inherit;        /* inherit parent color (or set a custom color) */
 }
