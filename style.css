@@ -1,231 +1,279 @@
-
+/* =============== GLOBAL =============== */
 body {
-    background-color: black;
-    color: white;
-     font-family: Arial, Helvetica, sans-serif;
-      margin: 0;
-     padding: 0;
-     text-size: 16px;
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Neutral buttons */
 button {
-  border-radius: 0.5em;
+  border-radius: 20px;
   cursor: pointer;
+  font-weight: 600;
+  padding: 15px 20px;
   border: none;
+}
+
+/* =============== HEADER =============== */
+.tab {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+
+/* LEFT LOGO */
+.logo h2 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* RIGHT WHITE NAV BLOCK */
+.whitetab {
+  background: #eaeaea;
+  padding: 12px 25px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Navigation Links */
+.navbar {
+  display: flex;
+  gap: 35px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid black;
+  transition: 0.2s ease;
+}
+
+.btn-link:hover {
   background: white;
   color: black;
-  width: 170px;
-   height: 35px;
-border: 2px solid black;
 }
-.tab {
-    height: 80px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+
+
+.navbar a:hover {
+  opacity: 0.6;
 }
-.logo {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-}
-.bigwrd{
-    font-size: 45px;
-    font-weight: bold;
-}
-.whitetab{
-    width: 70%;
-    background-color: white;
-}
-.contain{
-    height:100%;
-    width: 60%;
+
+/* Buttons in header */
+.bottom-tab {
   display: flex;
-  flex-direction: column; 
-  margin-left: auto;
-}
-.top-tab{
-    height: 50%;
-    text-decoration: none; 
-}
-.bottom-tab{
-    height: 50%;
-      display: flex;
-    justify-content: space-around;
+  gap: 15px;
 }
 
-.navbar {
-    margin-top: 10px;
+.bottom-tab button {
+  width: auto;
+  height: auto;
+  padding: 8px 22px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* sign in (outlined) */
+.bottom-tab button:first-child {
+  border: 2px solid black;
+  background: transparent;
+  color: black;
+}
+
+/* get started (black) */
+.bottom-tab button:last-child {
+  background: black;
+  color: white;
+}
+
+/* hover styles */
+.bottom-tab button:first-child:hover {
+  background: black;
+  color: white;
+}
+
+.bottom-tab button:last-child:hover {
+  opacity: 0.8;
+}
+
+
+/* =============== HERO SECTION =============== */
+.sec {
+  height: 100vh;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
-  color: black;          /* Makes the link take the parent’s text color */
-  text-decoration: none; 
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  box-sizing: border-box;
+  background: black;
+  position: relative;
+  overflow: hidden;
 }
 
-.section {
-    height: 100dvh;
-    width: 97dvw;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 150px;
+/* Animated vertical lines background (subtle like screenshot) */
+.sec::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.08) 8px,
+      transparent 8px,
+      transparent 16px
+  );
+  opacity: 0.2;
+  animation: slide 2.5s linear infinite;
 }
 
-.a1 {
-    width: 45%;
-    
+@keyframes slide {
+  from { transform: translateY(0); }
+  to   { transform: translateY(16px); }
 }
-.tabs {
-    width: 50%;
-   
-    display: flex;
-    justify-content: space-between;
-}
-.boxtab {
-    width: 30%;
-    margin-top: auto;
- 
-}
+
+/* HERO LEFT TEXT */
 .textbox {
-    width: 75%;
-    margin-right: auto;
+  z-index: 2;
+  max-width: 600px;
 }
-.sec { /*section of a page */
-  width: 100dvw;   /* full width of screen */
-  height: 100dvh;  /* full height of screen */
+
+.bigwrd {
+  font-size: 55px;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.textbox p {
+  font-size: 16px;
+  opacity: 0.9;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/* hero buttons */
+.textbox button {
+  width: auto;
+  padding: 10px 26px;
+  margin-right: 15px;
+  font-size: 15px;
+  border-radius: 8px;
+}
+
+/* find an expert (white) */
+.textbox button:first-child {
+  background: white;
+  color: black;
+}
+
+/* become an expert (white) */
+.textbox button:last-child {
+  background: white;
+  color: black;
+}
+
+.textbox button:hover {
+  opacity: 0.8;
+}
+
+/* =============== FEATURE TABS =============== */
+.tabs {
+  width: 50%;
+  z-index: 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.boxtab {
+  width: 30%;
+  text-align: center;
+  color: white;
+}
+
+/* icon circle */
+.boxtab::before {
+  content: "◉";
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.sec-2 {
-    width: 100dvw;   /* full width of screen */
-    display: flex;
-    flex-direction: column; /* stack children vertically */
-    justify-content: flex-start; /* align items from the top */
-    align-items: center; /* center children horizontally */
-    gap: 20px; /* space between .head and .row-1 */
-    padding: 20px; /* optional padding */
-    
-}
-
-.head {
-    width: 100%;
-    text-align: center;
-    flex: 0 0 auto; /* take space according to content */
-}
-
-.row-1 {
-    display: flex; /* arrange rectangles horizontally */
-    justify-content: space-around; /* space between rectangles */
-    align-items: center; /* vertically center rectangles */
-    width: 100%; /* fill the parent width */
-    max-width: 1200px; /* optional max width */
-    height: 300px; /* fixed height for rectangles */
-    background-color: rgba(0,0,0,0); /* optional for debugging */
-    margin-top: 25px;
-     height: 60dvh;
-     flex-wrap: ;
-}
-
-.r-rectangle {
-    width: 20%; /* relative width of each rectangle */
-    height: 100%; /* take most of row-1 height */
-    background-color: white; /* visible color */
-    border-radius: 10px; /* optional rounded corners */
-    color: black;
-    text-align: center;
-}
-.cont { /*gave this dimentions so sec-2 dosent affect white boxes*/
-     display: flex;
-    flex-direction: column;
-    width: 100dvw;      /* fill parent width */
-   
-}
-.a-rectangle {  /* modified rectangle */
-    width: 35%; /* relative width of each rectangle */
-    height: 100%; /* take most of row-1 height */
-    background-color: white; /* visible color */
-    border-radius: 10px; /* optional rounded corners */
-    display: flex;
-    justify-content: center;
-    align-items: top;
-    flex-direction: column;
-}
-.foot {
-    width: 100dvw;
-    background-color: black;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-top: 2px solid white;
-    min-height: 300px;
-}
-
-.fot{
-
-    text-decoration: unset;/* removes underline */
-    color: inherit;        /* inherit parent color (or set a custom color) */
-}
-.t-rectangle { /* modified rectangle */
-    width:  20%; /* relative width of each rectangle */
-    height: 75%; /* take most of row-1 height */
-    background-color: black; /* visible color */
-    border-radius: 10px; /* optional rounded corners */
-    border: 1px solid grey;
-}
-
-.contact-form {    /* the form */
-  width: 100%;
-  max-width: 400px;
-  display: flex;
-  justify-content: flex-start;  /* centers horizontally */
-  align-items: center;  /* top align vertically */
- padding: 10px;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.contact-form h2 {
-  text-align: center;
-  margin-bottom: 3px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: white;
   color: black;
-}
-
-.contact-form label {
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 20px;
+  margin: 0 auto 15px;
 }
 
-.contact-form input,
-.contact-form textarea {
+.boxtab h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.boxtab p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* MODERN FOOTER */
+.foot {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 15px;
-  font-family: inherit;
-  font-size: 1rem;
-  box-sizing: border-box;
-  background-color: #f9f9f9;
-  color: #000;
+  background-color: #0a0a0a;
+  padding: 40px 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 2px solid #333;
+  gap: 20px;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
-  border-color: #007bff;
+.foot p {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: #ccc;
 }
 
-.contact-form button {
-  background-color: black;
+.fot ul {
+  list-style: none;
+  padding: 0;
+}
+
+.fot ul li {
+  margin: 6px 0;
+}
+
+.fot ul li a {
+  color: #999;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.fot ul li a:hover {
   color: white;
-  border: 2px solid white;
-  border-radius: 15px;
-  padding: 10px;
-  cursor: pointer;
-  font-weight: bold;
-  align-self: center;
-}
-
-.contact-form button:hover {
-  background-color: black;
-  color: white;
+  padding-left: 6px;
 }
