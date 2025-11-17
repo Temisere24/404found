@@ -295,17 +295,27 @@ section.sec-2 {
   justify-content: space-between;
   width: 80dvw;
   padding-top: 30px;
+  back
 }
 .cardcont{
-  background: #1a1a1a;
-  width: 100px;
   height: 450px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .card{
   width: 40dvh;
   height: 60dvh;
   border-radius: 7px;
   background-color: white;
+  overflow: hidden;
+  border-width: 10px;
+  border-style: solid;
+  border-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
 }
 /* SEARCH BAR STYLES */
 .search-bar {
@@ -347,7 +357,7 @@ section.sec-2 {
 .switch {
   position: relative;
   display: inline-block;
-  width: 50px;
+  width:80px;
   height: 25px;
 }
 
@@ -440,4 +450,31 @@ section.sec-2 {
 .check input:checked + .box:after {
   transform: scale(1) rotate(45deg);
 }
+ .textcont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+.card-img {
+  width: 100%;             /* make image fit card width */
+  height: 200px;           /* fix the height */
+  object-fit: cover;       /* crop/scale image nicely */
+  display: block;
+  transition: transform 0.3s;  /* optional hover effect */
+}
+/* BUTTON*/
+.chat-btn {
+  padding: 10px 20px;
+  
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: background-color 0.2s, transform 0.2s;
+}
 
+.chat-btn:hover {
+  background-color: black;
+  transform: translateY(-2px);
+}
