@@ -492,3 +492,7 @@ section.sec-2 {
   column-gap: 3rem;   /* wider gap between columns */
   row-gap: 1rem; 
 }
+.cardgrid .card{
+  width: 30dvh;
+  height: 40dvh;
+}
