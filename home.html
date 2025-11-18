@@ -73,10 +73,16 @@
                      Offline
                 </div>
             </div>
-            <div>
-                <div class="textcont"><p>Price Range</p></div>
-                <div></div>
+            <div class="price-range-box">
+                <h3>Price Range</h3>
+            
+                <div class="price-values">
+                    <span>£0</span>
+                    <input type="range" min="0" max="1000" value="500" class="price-slider">
+                    <span>£1,000</span>
+                </div>
             </div>
+            
             <div>
                 <div class="textcont"><p>Verified Mentor</p></div>
                 <div>   <!--switch -->
@@ -126,57 +132,103 @@
        <div class="expertip">
         <p>Whether you're just starting or scaling up, we have plans tailored to meet your needs and budget.</p>
     </div><!-- words-->
-      
-       <div class="cardbox snd"> <!-- cardbox class -->
-         <div class="card"></div>
-         <div class="card"></div>
-         <div class="card"></div>
-       </div>
-       <div></div>
+    <div class="pricing-container">
+
+        <div class="price-card">
+            <h2>Basic</h2>
+            <h3 class="price">£0<span>/ mo</span></h3>
+    
+            <ul>
+                <li>Post up to 2 projects per month</li>
+                <li>Basic expert matching</li>
+                <li>Standard support</li>
+                <li>Secure messaging</li>
+                <li>5% platform fee</li>
+            </ul>
+    
+            <button class="price-btn">Get Started</button>
+        </div>
+    
+        <div class="price-card">
+            <h2>Professional</h2>
+            <h3 class="price">£29.99<span>/ mo</span></h3>
+    
+            <ul>
+                <li>Unlimited project postings</li>
+                <li>Priority expert matching</li>
+                <li>Advanced filtering options</li>
+                <li>Video consultations</li>
+                <li>Priority support</li>
+            </ul>
+    
+            <button class="price-btn">Start Free Trial</button>
+        </div>
+    
+        <div class="price-card">
+            <h2>Custom</h2>
+            <h3 class="price">£0<span>/ mo</span></h3>
+    
+            <ul>
+                <li>Dedicated account manager</li>
+                <li>Custom expert vetting</li>
+                <li>Team collaboration tools</li>
+                <li>Advanced analytics</li>
+                <li>24/7 premium support</li>
+            </ul>
+    
+            <button class="price-btn">Get Started</button>
+        </div>
+    
+    </div>
+    
     </section>
-     <section class="sec-2"> <!--CONTn -->
-           <div class="head">
-            <h1>Contact Us</h1>
-            <p>we're here to help. Get in touch with our team for questions, support, or partnership inquiries.</p>
+    <section class="mentor-contact-section">
+        <div class="head">
+            <h1>Contact Mentor</h1>
+            <p>We’re here to help. Reach out to your mentor for guidance, support, or questions.</p>
         </div>
-        <div class="cont">
-        <div class="row-1">
-            <div class="a-rectangle"><div class="contact-form">
-  <h2>Contact Us</h2>
-  <form action="#" method="post" class="form">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" placeholder="Your name" required>
-
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="Your email" required>
-
-    <label for="message">Message</label>
-    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
-
-    <button type="submit">Send Message</button>
-  </form>
-</div>
-</div>
-        </div>
-     
-        </div>
-    </section>
-
-     <section class="sec-2"> <!-- ABOUT US -->
-           <div class="head">
-            <h1>About Us</h1>
-            <p>learn more about who we are and what we do</p>
-            <p>At Tech Connect, we believe in the power of technology to transform lives and businesses. Our platform connects you with top-tier tech experts who are ready to help you tackle your biggest challenges.</p>
-        </div>
-        <div class="cont">
-        <div class="row-1">
-            <div class="t-rectangle"></div>
-            <div class="t-rectangle"></div>
-            <div class="t-rectangle"></div>
-        </div>
-     
+    
+        <div class="mentor-contact-container">
+            <div class="form-box">
+                <h2>Contact Mentor</h2>
+    
+                <form action="#" method="post" class="mentor-form">
+    
+                    <label for="m-name">Full Name</label>
+                    <input type="text" id="m-name" name="name" placeholder="Enter your full name" required>
+    
+                    <label for="m-email">Email Address</label>
+                    <input type="email" id="m-email" name="email" placeholder="Enter your email" required>
+    
+                    <label for="m-topic">Select Mentor</label>
+                    <select id="m-topic" name="mentor" required>
+                        <option value="" disabled selected>Select a mentor</option>
+                        <option value="mentor1">Mentor 1</option>
+                        <option value="mentor2">Mentor 2</option>
+                        <option value="mentor3">Mentor 3</option>
+                    </select>
+    
+                    <label for="m-message">Message</label>
+                    <textarea id="m-message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+    
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
         </div>
     </section>
+    
+
+    <section class="about-section">
+        <h1>About Us</h1>
+        <p>learn more about who we are and what we do</p>
+    
+        <p>
+            At Tech Connect, we believe in the power of technology to transform lives and 
+            businesses. Our platform connects you with top-tier tech experts who are ready 
+            to help you tackle your biggest challenges.
+        </p>
+    </section>
+    
     <footer class=" foot">
         <div></div>
         <div class="fot">

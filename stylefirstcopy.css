@@ -496,3 +496,235 @@ section.sec-2 {
   width: 30dvh;
   height: 40dvh;
 }
+/* --- PRICING SECTION (FIXED) --- */
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+  margin-top: 40px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.price-card {
+  width: 280px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.12);
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  color: black;
+}
+
+.price-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 28px rgba(0,0,0,0.18);
+}
+
+.price-card h2 {
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+/* PRICE (BLACK LIKE YOUR REFERENCE) */
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;  
+  margin-bottom: 15px;
+}
+
+.price span {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Feature List */
+.price-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.price-card ul li {
+  margin: 10px 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* BUTTON (BLACK LIKE REFERENCE) */
+.price-btn {
+  width: 100%;
+  padding: 12px;
+  background: black;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.2s;
+}
+
+.price-btn:hover {
+  background: #222;
+}
+
+/* =============== CONTACT MENTOR SECTION (SAFE & SCOPED) =============== */
+
+.mentor-contact-section {
+  width: 100%;
+  padding: 6dvh 6dvw;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.mentor-contact-section .head {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.mentor-contact-section .head h1 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.mentor-contact-section .head p {
+  font-size: 15px;
+  color: #cccccc;
+}
+
+.mentor-contact-section .mentor-contact-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mentor-contact-section .form-box {
+  width: 420px;
+  background: white;
+  color: black;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+
+.mentor-contact-section .form-box h2 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.mentor-contact-section .mentor-form label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  font-size: 14px;
+}
+
+.mentor-contact-section .mentor-form input,
+.mentor-contact-section .mentor-form select,
+.mentor-contact-section .mentor-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 18px;
+  font-size: 15px;
+  outline: none;
+  background: #f8f8f8;
+}
+
+.mentor-contact-section .mentor-form input:focus,
+.mentor-contact-section .mentor-form select:focus,
+.mentor-contact-section .mentor-form textarea:focus {
+  border-color: #6A5ACD;
+  box-shadow: 0 0 4px rgba(106,90,205,0.4);
+}
+
+.mentor-contact-section .btn-submit {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.mentor-contact-section .btn-submit:hover {
+  background: #444;
+}
+
+/* ===== PRICE RANGE SLIDER (MATCHES YOUR SCREENSHOT) ===== */
+
+.price-range-box {
+  text-align: center;
+  margin: 20px 0 30px 0;
+}
+
+.price-range-box h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: white;
+}
+
+.price-values {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+  width: 100%;
+}
+
+.price-values span {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+}
+
+/* Slider track */
+.price-slider {
+  width: 250px;
+  height: 6px;
+  background: #999999;
+  border-radius: 8px;
+  outline: none;
+}
+
+/* WebKit/Browsers */
+.price-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 26px;
+  height: 26px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Firefox */
+.price-slider::-moz-range-thumb {
+  width: 26px;
+  height: 26px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.about-section {
+  max-width: 700px;       /* controls width */
+  margin: 0 auto;         /* centers it */
+  text-align: center;     /* centers the text */
+  padding: 40px 20px;     /* spacing */
+  color: white;
+}
