@@ -295,7 +295,6 @@ section.sec-2 {
   justify-content: space-between;
   width: 80dvw;
   padding-top: 30px;
-  back
 }
 .cardcont{
   height: 450px;
@@ -316,7 +315,9 @@ section.sec-2 {
   flex-direction: column;
   align-items: center;
   color: black;
+  flex-shrink: 0;
 }
+
 /* SEARCH BAR STYLES */
 .search-bar {
     display: flex;
@@ -464,8 +465,7 @@ section.sec-2 {
 }
 /* BUTTON*/
 .chat-btn {
-  padding: 10px 20px;
-  
+  margin-bottom: 20px;
   border: none;
   border-radius: 30px;
   cursor: pointer;
@@ -477,4 +477,18 @@ section.sec-2 {
 .chat-btn:hover {
   background-color: black;
   transform: translateY(-2px);
+}
+.chtbtn{
+  padding: 2rem;
+}
+.expertip{
+  width: 45vdw;
+}
+.cardgrid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(2,1fr);
+  gap: 20px;
+  column-gap: 3rem;   /* wider gap between columns */
+  row-gap: 1rem; 
 }
