@@ -466,8 +466,13 @@ section.sec-2 {
 /* BUTTON*/
 .chat-btn {
   margin-bottom: 20px;
+  min-width: 120px;
+  min-height: 40px;
+  align-items: center;
   border: none;
   border-radius: 30px;
+  display: flex;
+  justify-content: center;
   cursor: pointer;
   background-color: white;
   color: black;
