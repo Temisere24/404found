@@ -277,3 +277,21 @@ button {
   color: white;
   padding-left: 6px;
 }
+
+.btn-link {
+  display: inline-block;
+  padding: 12px 20px;
+  background: white;
+  color: black;
+  border: 2px solid white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-link:hover {
+  background: black;
+  color: white;
+  border-color: white;
+}
