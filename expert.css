@@ -119,6 +119,152 @@ button {
 }
 
 
+/* =============== HERO SECTION =============== */
+.sec {
+  height: 100vh;
+  width: 100dvw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  box-sizing: border-box;
+  background: black;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated vertical lines background (subtle like screenshot) */
+.sec::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.08) 8px,
+      transparent 8px,
+      transparent 16px
+  );
+  opacity: 0.2;
+  animation: slide 2.5s linear infinite;
+}
+
+@keyframes slide {
+  from { transform: translateY(0); }
+  to   { transform: translateY(16px); }
+}
+
+/* Neutral buttons */
+button {
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 15px 20px;
+  border: none;
+}
+
+/* =============== HEADER =============== */
+.tab {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+
+/* LEFT LOGO */
+.logo h2 {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* RIGHT WHITE NAV BLOCK */
+.whitetab {
+  background: #eaeaea;
+  padding: 12px 25px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Navigation Links */
+.navbar {
+  display: flex;
+  gap: 35px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.btn-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  border: 2px solid black;
+  transition: 0.2s ease;
+}
+
+.btn-link:hover {
+  background: white;
+  color: black;
+}
+
+
+.navbar a:hover {
+  opacity: 0.6;
+}
+
+/* Buttons in header */
+.bottom-tab {
+  display: flex;
+  gap: 15px;
+}
+
+.bottom-tab button {
+  width: auto;
+  height: auto;
+  padding: 8px 22px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* sign in (outlined) */
+.bottom-tab button:first-child {
+  border: 2px solid black;
+  background: transparent;
+  color: black;
+}
+
+/* get started (black) */
+.bottom-tab button:last-child {
+  background: black;
+  color: white;
+}
+
+/* hover styles */
+.bottom-tab button:first-child:hover {
+  background: black;
+  color: white;
+}
+
+.bottom-tab button:last-child:hover {
+  opacity: 0.8;
+}
+
+
 /* MODERN FOOTER */
 .foot {
   width: 100%;
@@ -620,4 +766,42 @@ section.sec-2 {
   background: white;
   color: black;
   border-color: white;
+}
+/* MODERN FOOTER */
+.foot {
+  width: 100%;
+  background-color: #0a0a0a;
+  padding: 40px 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 2px solid #333;
+  gap: 20px;
+}
+
+.foot p {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.fot ul {
+  list-style: none;
+  padding: 0;
+}
+
+.fot ul li {
+  margin: 6px 0;
+}
+
+.fot ul li a {
+  color: #999;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.fot ul li a:hover {
+  color: white;
+  padding-left: 6px;
 }

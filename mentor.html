@@ -5,32 +5,173 @@
     <meta name="viewport" content="width= , initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="mentor.css">
+    <script src="calendar.js"></script>
 </head>
 <body>
-    <div class="mentorgrid">
-        <div class="discr-img"><img src="image/guy1.jpg" alt="" class="img"></div>
-        <div class="disc-txt"><p>Bio
-I’m a software engineer with over 10 years of experience building scalable web applications and guiding technical teams. I specialize in full-stack development, cloud systems, and helping learners break down complex technical topics into clear, practical steps. As a mentor, I focus on hands-on learning, career transition support, and building confidence through real-world problem-solving.
-
-Location
-
- Based in Riverview City, Oregon
- Part-time remote work from Harbor Point, Nova Scotia
-
-Qualifications
-
-B.S. in Computer Engineering, Westbridge Technical University
-Professional Certificate in Cloud Systems Design, Northshore Institute of Technology
-10+ years in full-stack development and cloud architecture
-
-Availability
-
-Light to moderate mentoring (3–5 hours per week)
-Weekday evenings and limited weekend sessions available
-</p></div>
-        <div class="feature1">contact him</div>
-        <div class="feature2">book a meeting</div>
-        <div class="feature3">payment form(shud be after booking meeting)</div>
+    <div class="tab">
+        <div class="logo"><h2>TECH CONNECT</h2></div>
+        <div class="whitetab">
+            <div class="contain">
+                <div class="top-tab">
+                    <nav class="navbar">
+                        <!-- Fix this link -->
+                       
+                        <a href="#">Services</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Contact</a>
+                        <a href="#">About Us</a>
+                    </nav>
+                </div>
+                <div class="bottom-tab">
+                    <button>Sign In</button>
+                    <button>Get Started</button>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+    
+    <div class="mentorgrid">
+
+    <!-- PHOTO + BIO SIDE BY SIDE -->
+   <div class="mentor-row">
+    <div class="mentor-photo">
+        <img src="image/guy1.jpg" alt="Mentor Image">
+    </div>
+
+    <div class="mentor-bio-clean">
+
+        <h1 class="big-wrd">Hi, I’m John Doe</h1>
+
+        <h2 class="section-heading">Bio</h2>
+        <p>
+            I’m a software engineer with over 10 years of experience building scalable 
+            web applications and guiding technical teams. I specialize in full-stack development 
+            and cloud systems, helping learners break down complex topics into clear steps.
+        </p>
+
+        <h2 class="section-heading">Location</h2>
+        <p>
+            • Riverview City, Oregon<br>
+            • Part-time remote work from Harbor Point, Nova Scotia
+        </p>
+
+        <h2 class="section-heading">Qualifications</h2>
+        <p>
+            • B.S. in Computer Engineering, Westbridge Technical University<br>
+            • Professional Certificate in Cloud Systems Design, Northshore Institute<br>
+            • 10+ years in full-stack development & cloud architecture
+        </p>
+
+        <h2 class="section-heading">Availability</h2>
+        <p>
+            • Light to moderate mentoring (3–5 hrs/week)<br>
+            • Weekday evenings + limited weekends
+        </p>
+
+    </div>
+</div>
+
+
+
+    <!-- CONTACT FORM -->
+    <div class="mentor-section">
+        <section class="mentor-contact-section">
+            <div class="head">
+                <h1>Contact John</h1>
+                <p>Reach out for guidance, support, or questions.</p>
+            </div>
+
+            <div class="mentor-contact-container">
+                <div class="form-box">
+                    <h2>Contact Mentor</h2>
+
+                    <form action="#" method="post" class="mentor-form">
+
+                        <label for="m-name">Full Name</label>
+                        <input type="text" id="m-name" name="name" placeholder="Enter your full name" required>
+
+                        <label for="m-email">Email Address</label>
+                        <input type="email" id="m-email" name="email" placeholder="Enter your email" required>
+
+                        <label for="m-topic">Select Mentor</label>
+                        <select id="m-topic" name="mentor" required>
+                            <option value="" disabled selected>Select a mentor</option>
+                            <option value="mentor1">Mentor 1</option>
+                            <option value="mentor2">Mentor 2</option>
+                            <option value="mentor3">Mentor 3</option>
+                        </select>
+
+                        <label for="m-message">Message</label>
+                        <textarea id="m-message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+                        <button type="submit" class="btn-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- CALENDAR -->
+    <div class="mentor-section calendar-section">
+        <h2 class="calendar-title">Select a Meeting Date</h2>
+        <div class="calendar" id="calendar">
+            <div class="calendar-card">
+    <iframe 
+        src="https://calendar.google.com/calendar/embed?src=your_calendar_link_here&ctz=UTC"
+        style="border:0" 
+        frameborder="0" 
+        scrolling="no">
+    </iframe>
+</div>
+
+        </div>
+    </div>
+
+
+    <!-- PAYMENT PLACEHOLDER -->
+    <div class="mentor-section payment-box">
+        <h2>Payment (After Booking)</h2>
+        <p>This section will unlock once a date is selected.</p>
+    </div>
+
+</div>
+
+
+    <footer class=" foot">
+        <div></div>
+        <div class="fot">
+            <p>use cases</p>
+            <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Pricing</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">About Us</a></li>
+  </ul>
+        </div>
+        <div class="fot">
+            <p>explore</p>
+            <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Pricing</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">About Us</a></li>
+  </ul>
+        </div>
+        <div class="fot">
+            <p>resources</p>
+            <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Pricing</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">About Us</a></li>
+  </ul>
+        </div>
+    </footer>
 </body>
 </html>
