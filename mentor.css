@@ -429,3 +429,83 @@ button:hover,
   background: #444;
 }
 
+
+
+.payment-section {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  border: 3px solid #000;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #000;
+}
+
+.payment-section h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.payment-form .form-group {
+  margin-bottom: 15px;
+}
+
+.payment-form label {
+  font-weight: 700;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.payment-form input {
+  width: 100%;
+  padding: 12px;
+  border: 3px solid #000;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #fff;
+  color: #000;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.pay-btn {
+  width: 100%;
+  padding: 15px;
+  background: #000;
+  color: #fff;
+  border: 3px solid #000;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+/* Payment buttons */
+.pay-options {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.alt-pay {
+  width: 100%;
+  padding: 14px;
+  border: 3px solid #000;
+  border-radius: 8px;
+  background: #fff;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.apple-pay {
+  font-size: 20px;
+}
