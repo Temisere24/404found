@@ -300,3 +300,16 @@ button {
     border-radius: 10px;
     filter: invert(1) hue-rotate(180deg) contrast(1.2);
 }
+.chat-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: black;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.chat-btn:hover {
+    background: white;
+    color: black;
+}
