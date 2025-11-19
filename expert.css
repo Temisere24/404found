@@ -805,3 +805,24 @@ section.sec-2 {
   color: white;
   padding-left: 6px;
 }
+/* UNIVERSAL BUTTON BORDER + TEXT RULES */
+button,
+.btn-link,
+.chat-btn,
+.bottom-tab button,
+.mentor-contact-section .btn-submit {
+    border: 2px solid white !important;
+    color: white !important;
+    transition: 0.25s ease;
+}
+
+/* HOVER — keep text white, avoid blending */
+button:hover,
+.btn-link:hover,
+.chat-btn:hover,
+.bottom-tab button:hover,
+.mentor-contact-section .btn-submit:hover {
+    color: white !important;
+    border-color: white !important;
+    opacity: 0.8;   /* subtle effect without disappearing */
+}

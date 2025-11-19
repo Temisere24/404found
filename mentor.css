@@ -160,6 +160,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 60px;
+ 
 }
 
 /* PHOTO + BIO ROW */
@@ -169,6 +170,7 @@ button {
   gap: 40px;
   width: 100%;
   align-items: start;
+  
 }
 
 .mentor-photo img {
@@ -313,3 +315,117 @@ button {
     background: white;
     color: black;
 }
+/* UNIVERSAL BUTTON BORDER + TEXT RULES */
+button,
+.btn-link,
+.chat-btn,
+.bottom-tab button,
+.mentor-contact-section .btn-submit {
+    border: 2px solid white !important;
+    color: white !important;
+    transition: 0.25s ease;
+}
+
+/* HOVER — keep text white, avoid blending */
+button:hover,
+.btn-link:hover,
+.chat-btn:hover,
+.bottom-tab button:hover,
+.mentor-contact-section .btn-submit:hover {
+    color: white !important;
+    border-color: white !important;
+    opacity: 0.8;   /* subtle effect without disappearing */
+}
+/* =============== CONTACT MENTOR SECTION (SAFE & SCOPED) =============== */
+
+.mentor-contact-section {
+  width: 100%;
+  padding: 6dvh 6dvw;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.mentor-contact-section .head {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.mentor-contact-section .head h1 {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.mentor-contact-section .head p {
+  font-size: 15px;
+  color: #cccccc;
+}
+
+.mentor-contact-section .mentor-contact-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mentor-contact-section .form-box {
+  width: 420px;
+  background: white;
+  color: black;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+
+.mentor-contact-section .form-box h2 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.mentor-contact-section .mentor-form label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  font-size: 14px;
+}
+
+.mentor-contact-section .mentor-form input,
+.mentor-contact-section .mentor-form select,
+.mentor-contact-section .mentor-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 18px;
+  font-size: 15px;
+  outline: none;
+  background: #f8f8f8;
+}
+
+.mentor-contact-section .mentor-form input:focus,
+.mentor-contact-section .mentor-form select:focus,
+.mentor-contact-section .mentor-form textarea:focus {
+  border-color: #6A5ACD;
+  box-shadow: 0 0 4px rgba(106,90,205,0.4);
+}
+
+.mentor-contact-section .btn-submit {
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.mentor-contact-section .btn-submit:hover {
+  background: #444;
+}
+
