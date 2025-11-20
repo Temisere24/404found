@@ -27,6 +27,10 @@ button {
   align-items: center;
   padding: 0 60px;
   box-sizing: border-box;
+    position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: grey;
 }
 
 /* LEFT LOGO */
@@ -759,4 +763,23 @@ section.sec-2 {
     border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
+}
+/* Headings inside the cards */
+.card-heading {
+  font-size: 1.1rem;           /* Slightly larger than body text */
+  font-weight: 600;            /* Semi-bold like in the image */
+  color: #1a1a1a;              /* Dark but not pure black */
+  margin-bottom: 0.5rem;       /* Tight spacing */
+  letter-spacing: -0.2px;      /* Subtle tightening for cleaner look */
+  text-align: center;         /* Centered text */
+}
+
+/* Paragraph text inside the cards */
+.card-text {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #4a4a4a;              /* Softer gray like in the screenshot */
+  line-height: 1.5;            /* Comfortable spacing */
+  margin: 0;                   /* Matches the compact style in the card */
+  text-align: center;         /* Centered text */
 }
